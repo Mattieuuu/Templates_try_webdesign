@@ -1,0 +1,40 @@
+{
+  "name": "modern-navbar-template",
+  "version": "1.0.0",
+  "description": "Un template de navbar moderne avec animations CSS et JavaScript interactif",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx live-server --port=3000",
+    "dev": "npx live-server --port=3000 --watch=src/",
+    "build": "npm run minify-css && npm run minify-js",
+    "minify-css": "npx cleancss-cli src/css/style.css -o dist/css/style.min.css",
+    "minify-js": "npx terser src/js/script.js -o dist/js/script.min.js",
+    "lint": "npx eslint src/js/",
+    "format": "npx prettier --write .",
+    "validate": "npx html-validate index.html"
+  },
+  "keywords": [
+    "navbar",
+    "template",
+    "modern",
+    "responsive",
+    "css",
+    "javascript",
+    "web-design"
+  ],
+  "author": "Mattieuuu",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "clean-css-cli": "^5.6.2",
+    "terser": "^5.19.4",
+    "eslint": "^8.49.0",
+    "prettier": "^3.0.3",
+    "html-validate": "^8.5.0"
+  },
+  "browserslist": [
+    "last 3 versions",
+    "> 1%",
+    "not dead"
+  ]
+}
