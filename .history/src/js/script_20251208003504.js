@@ -1,13 +1,13 @@
 // ===== CAROUSEL FUNCTIONALITY =====
 function initCarousels() {
-    const tracks = document.querySelectorAll('.carousel-track');
+    const carousels = document.querySelectorAll('.carousel');
     
-    tracks.forEach(track => {
-        // Clone all blocks for infinite loop
-        const blocks = track.querySelectorAll('.portfolio-block');
-        blocks.forEach(block => {
-            const clone = block.cloneNode(true);
-            track.appendChild(clone);
+    carousels.forEach(carousel => {
+        // Clone items for infinite loop
+        const items = carousel.querySelectorAll('.carousel-item');
+        items.forEach(item => {
+            const clone = item.cloneNode(true);
+            carousel.appendChild(clone);
         });
     });
 }
