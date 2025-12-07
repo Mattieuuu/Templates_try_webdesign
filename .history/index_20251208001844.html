@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Navbar Template</title>
+    <link rel="stylesheet" href="src/css/style.css?v=4">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Modern Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <!-- Logo -->
+            <div class="nav-logo">
+                <a href="#" class="nav-logo-link">
+                    <i class="fas fa-code"></i>
+                    <span>WebDesign</span>
+                </a>
+            </div>
+
+            <!-- Navigation Menu -->
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active">
+                        <i class="fas fa-home"></i>
+                        <span>Accueil</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">
+                        <i class="fas fa-user"></i>
+                        <span>À propos</span>
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#services" class="nav-link">
+                        <i class="fas fa-cogs"></i>
+                        <span>Services</span>
+                        <i class="fas fa-chevron-down dropdown-arrow"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#web-design">Web Design</a></li>
+                        <li><a href="#development">Développement</a></li>
+                        <li><a href="#seo">SEO</a></li>
+                        <li><a href="#marketing">Marketing</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="#portfolio" class="nav-link">
+                        <i class="fas fa-briefcase"></i>
+                        <span>Portfolio</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">
+                        <i class="fas fa-envelope"></i>
+                        <span>Contact</span>
+                    </a>
+                </li>
+            </ul>
+
+            <!-- CTA Button -->
+            <div class="nav-cta">
+                <button class="cta-btn primary-btn">
+                    <i class="fas fa-rocket"></i>
+                    Commencer
+                </button>
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Demo Content -->
+    <main class="main-content">
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <h1>Template de Navbar Moderne</h1>
+                <p>Un design élégant et responsive avec des animations fluides</p>
+                <div class="hero-features">
+                    <div class="feature">
+                        <i class="fas fa-mobile-alt"></i>
+                        <span>Responsive</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-palette"></i>
+                        <span>Mode sombre</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-magic"></i>
+                        <span>Animations CSS</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <h2>À propos</h2>
+            <p>Cette navbar moderne présente les dernières tendances en matière de design web.</p>
+        </section>
+
+        <section id="services" class="section">
+            <h2>Services</h2>
+            <p>Découvrez nos différents services de développement web.</p>
+        </section>
+
+        <section id="portfolio" class="section">
+            <h2>Portfolio</h2>
+            <p>Consultez nos dernières réalisations.</p>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Contact</h2>
+            <p>N'hésitez pas à nous contacter pour vos projets.</p>
+        </section>
+    </main>
+
+    <script src="src/js/script.js"></script>
+</body>
+</html>
+

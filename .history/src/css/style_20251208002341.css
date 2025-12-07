@@ -759,6 +759,7 @@ body.dark-theme .about-card {
   border-radius: 20px;
   font-size: 0.85rem;
   font-weight: 600;
+  margin: 1rem 1.5rem 1.5rem 1.5rem;
 }
 
 body.dark-theme .portfolio-card {
